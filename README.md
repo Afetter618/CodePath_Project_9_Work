@@ -1,6 +1,6 @@
 # Honeypot Assignment
 
-**Time spent:** **22** hours spent in total
+**Time spent:** **23** hours spent in total
 
 **Objective:** Create a honeynet using MHN-Admin. Present your findings as if you were requested to give a brief report of the current state of Internet security. Assume that your audience is a current employer who is questioning why the company should allocate anymore resources to the IT security team.
 
@@ -51,3 +51,5 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 ## Notes
 
 Describe any challenges encountered while doing the assignment.
+
+When doing this assignment, I had a lot of challenges. I first tried creating the mhn-admin VM through the GCP Cloud Shell. However, it was not working at first so I began manually creating each of the VMs. Although everything worked well and the MHM-Admin page was successfully created along with the honeypot VM, none of the attacks were showing up after using nmap on my Kali Linux VM. This problem resulted in me recreating the VMs over 5 times and completely starting over 3 times. However, after the third restart, I realized that I had been following the guildine's timezome and region when I shouldn't have. Since I am in Eastern Standard Time, I should have been using "us-east1" as the region and "us-east1-b" as the zone. After realizing this problem, I eventually got the attacks to work and successfully implement the honeypot.
