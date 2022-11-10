@@ -24,7 +24,7 @@ Dionaea is a honeypot records attacks and malware and makes a copy of that malwa
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
 
-The RDBMS that MHN-Admin uses is Pwnlandia. The information that the JSON file records is the information about the attackers. Not only does it store the IP addresses, but also the protocols used, timestamps of when the attacks occurred, and honeypot the attacks were performed on.
+The RDBMS that MHN-Admin uses is MongoDB. The information that the JSON file records is the information about the attackers. Not only does it store the IP addresses, but also the protocols used, timestamps of when the attacks occurred, and honeypot the attacks were performed on.
 
 **Json file in branch**
 
