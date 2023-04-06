@@ -1,4 +1,4 @@
-# Honeypot Assignment
+# Honeypot Implementation
 
 **Time spent:** **23** hours spent in total
 
