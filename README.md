@@ -4,7 +4,7 @@
 
 **Objective:** Create a honeynet using MHN-Admin. Present your findings as if you were requested to give a brief report of the current state of Internet security. Assume that your audience is a current employer who is questioning why the company should allocate anymore resources to the IT security team.
 
-### MHN-Admin Deployment (Required)
+### MHN-Admin Deployment
 
 **Summary:** How did you deploy it? Did you use GCP, AWS, Azure, Vagrant, VirtualBox, etc.?
 
@@ -12,7 +12,7 @@ I deployed the MHN-Admin website through GCP and opened the website using its IP
 
 ![CodePath_Week_9_Lab_SS_1_MHN_Admin_Configuration](https://user-images.githubusercontent.com/111651054/201005079-44797e2f-8211-4cbd-bfc5-938e65b4673a.gif)
 
-### Dionaea Honeypot Deployment (Required)
+### Dionaea Honeypot Deployment
 
 **Summary:** Briefly in your own words, what does dionaea do?
 
@@ -20,7 +20,7 @@ Dionaea is a honeypot records attacks and malware and makes a copy of that malwa
 
 ![CodePath_Week_9_Lab_SS_2_Honeypot_Configuration](https://user-images.githubusercontent.com/111651054/201005101-3bfbaa5a-857e-4cd2-9740-b089c8d6511e.gif)
 
-### Database Backup (Required) 
+### Database Backup
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
 
@@ -28,28 +28,6 @@ The RDBMS that MHN-Admin uses is MongoDB. The information that the JSON file rec
 
 **Json file in branch**
 
-### Deploying Additional Honeypot(s) (Optional)
-
-#### X Honeypot
-
-**Summary:** What does this honeypot simulate and do for a security researcher?
-
-<img src="x-honeypot.gif">
-
-### Malware Capture and Identification (Optional)
-
-#### X Malware
-
-**Summary:** How did you find it? Which honeypot captured it? What does each malware do?
-
-MD5 Hash: *Run `md5sum` on the file and record the hash here.*
-
-SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
-
-<img src="x-malware.gif">
-
 ## Notes
 
-Describe any challenges encountered while doing the assignment.
-
-When doing this assignment, I had a lot of challenges. I first tried creating the mhn-admin VM through the GCP Cloud Shell. However, it was not working at first so I began manually creating each of the VMs. Although everything worked well and the MHM-Admin page was successfully created along with the honeypot VM, none of the attacks were showing up after using nmap on my Kali Linux VM. This problem resulted in me recreating the VMs over 5 times and completely starting over 3 times. However, after the third restart, I realized that I had been following the guildine's timezome and region when I shouldn't have. Since I am in Eastern Standard Time, I should have been using "us-east1" as the region and "us-east1-b" as the zone. After realizing this problem, I eventually got the attacks to work and successfully implement the honeypot.
+When doing this project, I had a lot of challenges. I first tried creating the mhn-admin VM through the GCP Cloud Shell. However, it was not working at first so I began manually creating each of the VMs. Although everything worked well and the MHM-Admin page was successfully created along with the honeypot VM, none of the attacks were showing up after using nmap on my Kali Linux VM. This problem resulted in me recreating the VMs over 5 times and completely starting over 3 times. However, after the third restart, I realized that I had been following the guildine's timezome and region when I shouldn't have. Since I am in Eastern Standard Time, I should have been using "us-east1" as the region and "us-east1-b" as the zone. After realizing this problem, I eventually got the attacks to work and successfully implement the honeypot.
